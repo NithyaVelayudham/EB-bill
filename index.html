@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EB-Bill Project in JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Electricity Bill</h1>
+    <div class="container">
+        <div class="row">
+            <form action="" method="post">
+                <label> Enter Your Meter Number :</label>
+                <input type="text" placeholder="Enter your correct number" 
+               class="form-control" id="num">
+                <br>
+                <input type="button" name="Click" id="submit"
+        onclick="meternum()" value="Click" class="btn">
+                <p id="demo"></p>
+        
+                <div id="option" style="display: none;">
+                <input type="radio" name="Radio" class="radio"
+                onclick="myfunction(this.value)" value="1">Residential
+                <input type="radio" name="Radio" class="radio"
+                onclick="myfunction(this.value)" value="2">Commercial
+            </div>
+            <div id="d1" style="display: none;">
+                <label> Enter the Number of units consumed :</label>
+                <input type="text" name="amount" id="amt1"
+                class="form-control">
+                <br>
+                <input type="submit" class="btn" onclick="amount1()" >
+            </div>
+            <div id="d2" style="display: none;">
+                <label> Enter the Number of units consumed :</label>
+                <input type="text" name="amount" id="amt2"
+                class="form-control">
+                <br>
+                <input type="submit" name="submit"
+                class="btn" value="Submit" onclick="amount2()" id="submit1" >
+            </div>
+            <div class="button">
+            <button type="reset" class="btn1" onclick="reset()">Clear</button>
+        </div>
+        </form>
+        
+        </div>
+    </div>
+    <br>
+
+    <script src="script.js"></script>
+</body>
+</html>
